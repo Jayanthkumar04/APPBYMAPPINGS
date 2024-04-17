@@ -7,13 +7,16 @@ public class CustResponse {
 
     long acoount_id;
 
+    double balance;
+
     public CustResponse() {
     }
 
-    public CustResponse(String name, long customer_id, long acoount_id) {
+    public CustResponse(String name, long customer_id, long acoount_id,double balance) {
         this.name = name;
         this.customer_id = customer_id;
         this.acoount_id = acoount_id;
+        this.balance = balance;
     }
 
     public String getName() {
@@ -40,5 +43,11 @@ public class CustResponse {
         this.acoount_id = acoount_id;
     }
 
+    public double getBalance() {
+        return balance;
+    }
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }

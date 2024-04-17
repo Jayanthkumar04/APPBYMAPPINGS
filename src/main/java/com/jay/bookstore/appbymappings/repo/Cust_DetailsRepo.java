@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface Cust_DetailsRepo extends JpaRepository<Cust_Details,Long> {
 
 
+
 }

@@ -13,5 +13,10 @@ public interface Acc_BalanceRepo extends JpaRepository<Acc_Balance,Long> {
     @Query(value = "select * from Cust_Acc_Map cam where cam.cust_id=:id " ,nativeQuery = true)
     Cust_Acc_Map findByCustId(long id);
 
+    @Query(value="select *from Acc_Balance ab where ab.acc_id=:id",nativeQuery = true)
+    Acc_Balance findByacc_id(long id);
+
+
+
 
 }
